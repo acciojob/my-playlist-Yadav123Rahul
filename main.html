@@ -1,16 +1,80 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="">
+  <style>
+    *{
+      background: #cccccc;
+    }
+    .player_one{
+      background: white;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .player_one ul{
+      
+      background: white;
+      
+    }
+    .player_one li{
+      background: white;
+      list-style-type:none;
+
+    }
+    .player_one a{
+      background: white;
+      color: #000;
+      text-decoration-line:none;
+    }
+    .player_two{
+      border: 1px solid black;
+      background:white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 5px;
+      margin: auto;
+      width: 25%;
+      padding: 10px;
+    }
+    .player_two video{
+      background:white;
+    }
+    .player_two h3{
+      background:white;
+    }
+    .player_two audio{
+      background: white;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  
+  <h1 style="text-align: center;">My Playlist</h1>
+  <div class="player_one">
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=kd-6aw99DpA " target="_blank">Song1</a></li>
+      <li><a href="https://www.youtube.com/watch?v=9iIX4PBplAY " target="_blank">Song2</a></li>
+      <li><a href="https://www.youtube.com/watch?v=IjBAgWKW12Y " target="_blank">Song3</a></li>
+      <li><a href="https://www.youtube.com/watch?v=puKD3nkB1h4 " target="_blank">Song4</a></li>
+      <li><a href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song5</a></li>
+    </ul>
+  </div>
+  <h2 style="text-align: center;">Now Playing...</h2>
+  <div class="player_two">
+    <video controls>
+      <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+    </video>
+    <h2  style="text-align: center;">MP3 songs</h2>
+    <audio  controls>
+      <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mp4">
+    </audio>
+  </div>
 </body>
-
 </html>
